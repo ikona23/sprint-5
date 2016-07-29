@@ -23,15 +23,16 @@
   }
 };
 
-//Exercise 3
+
 var size = 8;
 var space = "";
 
 for (var y = 0; y < size; y++) {
   for (var x = 0; x < size; x++) {
-    if ((x + y) % 2 == 0){
+    var sum = x + y;
+    if ((sum) % 2 == 0)
       space += " ";
-  }  else {
+    else
       space += "#";
   }
   space += "\n";
